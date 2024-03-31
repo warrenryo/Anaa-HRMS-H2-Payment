@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
 
+
+
+        <script src="./node_modules/preline/dist/preline.js"></script>
     <script src="/assets/js/perfect-scrollbar.min.js"></script>
     <script defer src="/assets/js/popper.min.js"></script>
     <script defer src="/assets/js/tippy-bundle.umd.min.js"></script>
@@ -89,7 +92,7 @@
             }));
         });
     </script>
-
+@include('sweetalert::alert')
 
 
     <div class="main-container text-black dark:text-white-dark min-h-screen" :class="[$store.app.navbar]">

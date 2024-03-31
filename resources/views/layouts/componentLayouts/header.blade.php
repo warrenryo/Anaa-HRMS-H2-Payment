@@ -352,7 +352,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="{{ route('profile.edit')}}" class="dark:hover:text-white" @click="toggle">
+                            
                                 <svg class="w-4.5 h-4.5 ltr:mr-2 rtl:ml-2" width="18" height="18" viewBox="0 0 24 24"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="12" cy="6" r="4" stroke="currentColor" stroke-width="1.5" />
@@ -399,68 +399,3 @@
     </div>
 </header>
 <script>
-    documventListener("alpine:init", () => {
-        Alpine.data("header", () => ({
-            init() {
-                const selector = document.querySelector('ul.horizontal-menu a[href="' + window
-                    .location.pathname + '"]');
-                if (selector) {
-                    selector.classList.add('active');
-                    const ul = selector.closest('ul.sub-menu');
-                    if (ul) {
-                        let ele = ul.closest('li.menu').querySelectorAll('.nav-link');
-                        if (ele) {
-                            ele = ele[0];
-                            setTimeout(() => {
-                                ele.classList.add('active');
-                            });
-                        }
-                    }
-                }
-            },
-
-            notifications: [{
-                id                 profil                g',
-                message: '                sm mr-1">John Doe</strong>invite you to <strong>Prototyping</strong>',
-                time: '45 min                 
-            {
-                 ,
-                ro                eg',
-                  e: '<strong class="text-sm m                ong>mentioned you to <strong>UX Basics</strong>',
-                time: '9h Ago',
-            },
-            id: 3,
-            e: ',                sage: '                sm mr - 1">Anna Morgan</strong                             time: '9h Ago',
-            }
-            ],
-
-        mess                     id: 1,
-        e: '<span class="grid place-content-center                  bg-suc                uccess text-success dark:text-success-light"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></span>',
-        title: 'Congratulations!',
-        message: 'Your OS has been updated.                ime: '1hr',
-            },
-        id: 2,
-        image                 place - conten             ro            fo                text -in ght"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>',
-        title: 'Did you know?',
-        message: 'You can switch between artboards.',
-        time                 },
-        {
-            image: '<span class="grid place-c                9 rounded-ful            t d            xt                nger-li                p://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></span>',
-            title: 'Something went wrong!',
-            message: 'Send Reposrt',
-            time: '2days',
-        },
-        {
-                 ,
-            image: '<span                 ntent-center w-9 h-9 roun                light dark:bg-w            ing            ng                http://                 class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">    <circle cx="12" cy="12" r="10"></circle>    <line x1="12" y1="8" x2="12" y2="12"></line>    <line x1="12" y1="16" x2="12.01" y2="16"></line></svg></span>',
-            title: 'Warning',
-            message: 'Your password strength is low.',
-            time: '5days',
-        },
-            ],
-        removeNotifi                            this.n                notifications.filter((d) => d.id !== value)                          remov            {
-        this.messages = this.messages.filter((d) => d.id !== value);
-    },
-        }));
-    });
-</script>
